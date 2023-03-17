@@ -1,0 +1,20 @@
+$mainFonts: "Roboto";
+$secondaryFonts: " Orchidea Pro";
+$primaryTextColor: #fda700;
+$primaryBackground: #0d2b6d;
+$secondaryTextColor: #373737;
+
+$breakpoints: (
+    "mobile": (
+        max-width: 765px,
+    ),
+    "tablet": (
+        max-width: 950px,
+    ),
+    "small_laptop": (
+        max-width: 1023px,
+    ),
+    "laptop": (
+        max-width: 1100px,
+    ),
+) !default;
