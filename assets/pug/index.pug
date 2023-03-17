@@ -1,0 +1,57 @@
+include components/index.pug
+
+doctype html
+html(lang='en')
+    +Head('Home page')
+    body
+        include parts/header.pug
+        section.home-hero
+            .body.content-center 
+                h1 L'investimento intelligente che ti farà guadagnare €9.288 in 5 ore
+                    span ed eliminare la povertà
+                p  Con il nostro investimento intelligente potrai guadagnare migliaia di euro in meno di 7 giorni ed eliminare la povertà ottenendo profitti!
+                .banner 
+                    img(src="./public/images/hero-img.png",srcset= './public/images/hero-img.png 1x, ./public/images/retina/hero-img.png 2x' alt="")
+                    .text Adesso il computer di quantum computing numero uno al mondo
+                    +Button('È LIVE!', 'is-blue')
+                .registration-form
+                    .play 
+                        i.icon-play
+                    .registration   
+                        h3 Registrazione
+                        form.form
+                            .form-item
+                                input(type="text" name="name" placeholder="Name")
+                            .form-item
+                                input(type="text" name="name" placeholder="Cogname")
+                            .form-item
+                                input(type="text" name="email" placeholder="E-mail" )
+                            .form-item 
+                                .input-wrapper
+                                    input(type="tel" id='phone' name="number" placeholder="+380" )
+                                    
+                            +Button('Registrati', 'is-orange')
+        section.parthners
+            .wrapper.content-center 
+                +ParthnerItem('../../public/images/parthners/1.png', 'Harold Barnes ha ottenuto', '€235', 'Saldo attuale: €132')
+                +ParthnerItem('../../public/images/parthners/2.png', 'Harold Barnes ha ottenuto', '€235', 'Saldo attuale: €132')
+                +ParthnerItem('../../public/images/parthners/3.png', 'Harold Barnes ha ottenuto', '€235', 'Saldo attuale: €132')
+        section.problem.content-center
+            h2 Problema
+            .cards 
+                +ProblemItem('Problema 1', 'Le grandi aziende sono le sole a poter erogare stipendi consistenti. Tuttavia, grazie al quantum computing, questa realtà sta per cambiare.')
+                +ProblemItem('Problema 2','Le grandi aziende sono le sole a poter erogare stipendi consistenti. Tuttavia, grazie al quantum computing, questa realtà sta per cambiare. Da oggi, sarai TU stesso lartefice di un grande introito, grazie al potere che un tempo era riservato alle persone più ricche e che adesso appartiene anche a te.')
+                +ProblemItem('Problema 3','QuantumAI è stato progettato per rendere il mondo un posto migliore. Elon ha sviluppato unidea vantaggiosa per tutti. Hai prestiti da restituire o un mutuo da pagare? Desideri aiutare le persone? Ora potrai fare entrambe le cose.')
+                +ProblemItem('Problema 4','QuantumAI è stato progettato per rendere il mondo un posto migliore. Elon ha sviluppato unidea vantaggiosa per tutti. Hai prestiti da restituire o un mutuo da pagare? Desideri aiutare le persone? Ora potrai fare entrambe le cose.')
+            .arrow 
+                .border
+                    i.icon-arrow-bottom
+        section.solution.content-center
+            h2 Soluzione
+            p Utilizzando la potenza del quantum computing ci aiuterai a raggiungere i privilegi che attualmente sono destinati soltanto all'1% delle persone, nonché a risolvere 4 grandi problematiche: sviluppare un'economia stabile e ricca per tutti, eliminare la povertà, offrire a tutti uno stile di vita dignitoso (così che non siano soltanto i ricchi ad averlo) e aiutarti a realizzare i tuoi sogni finanziari!
+        section.start.content-center
+            .title Ecco come iniziare:
+            .cards
+                +StartItem('Deposita', 'Deposita€ 250', '1')
+                +StartItem('Scegli', 'Scegli le operazioni raccomandate da QuantumAI (grazie alla potenza dellinformatica quantistica!)', '2')
+                +StartItem('Preleva', 'Preleva qualsiasi importo in poche ore!', '3')
